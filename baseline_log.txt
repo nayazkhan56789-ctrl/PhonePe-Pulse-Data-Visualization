@@ -1,0 +1,54 @@
+TF-IDF matrix: (180040, 206890)  (19s)
+  C=1.0   dev macro-F1 = 0.7764
+/usr/local/lib/python3.12/dist-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 300 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  C=3.0   dev macro-F1 = 0.7762
+/usr/local/lib/python3.12/dist-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 300 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  C=10.0  dev macro-F1 = 0.7698
+Chosen C=1.0  (dev macro-F1 0.7764)
+
+=== baseline_tfidf_lr_DEV (TEST) ===
+accuracy=0.8332  macro-F1=0.7764  weighted-F1=0.8345
+              precision    recall  f1-score   support
+
+  BACKGROUND     0.6612    0.6706    0.6659      3449
+   OBJECTIVE     0.6312    0.6397    0.6355      2376
+     METHODS     0.9091    0.9132    0.9111      9964
+     RESULTS     0.9207    0.8601    0.8894      9841
+ CONCLUSIONS     0.7402    0.8245    0.7801      4582
+
+    accuracy                         0.8332     30212
+   macro avg     0.7725    0.7816    0.7764     30212
+weighted avg     0.8371    0.8332    0.8345     30212
+
+
+=== baseline_tfidf_lr (TEST) ===
+accuracy=0.8265  macro-F1=0.7692  weighted-F1=0.8279
+              precision    recall  f1-score   support
+
+  BACKGROUND     0.6568    0.6650    0.6609      3621
+   OBJECTIVE     0.6083    0.6271    0.6176      2333
+     METHODS     0.8998    0.9108    0.9052      9897
+     RESULTS     0.9212    0.8537    0.8862      9713
+ CONCLUSIONS     0.7395    0.8162    0.7760      4571
+
+    accuracy                         0.8265     30135
+   macro avg     0.7651    0.7746    0.7692     30135
+weighted avg     0.8306    0.8265    0.8279     30135
+
+done in 273s

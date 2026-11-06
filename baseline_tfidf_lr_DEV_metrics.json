@@ -1,0 +1,38 @@
+{
+  "model": "baseline_tfidf_lr_DEV",
+  "accuracy": 0.8332,
+  "macro_f1": 0.7764,
+  "weighted_f1": 0.8345,
+  "per_class": {
+    "BACKGROUND": {
+      "precision": 0.6612,
+      "recall": 0.6706,
+      "f1-score": 0.6659,
+      "support": 3449.0
+    },
+    "OBJECTIVE": {
+      "precision": 0.6312,
+      "recall": 0.6397,
+      "f1-score": 0.6355,
+      "support": 2376.0
+    },
+    "METHODS": {
+      "precision": 0.9091,
+      "recall": 0.9132,
+      "f1-score": 0.9111,
+      "support": 9964.0
+    },
+    "RESULTS": {
+      "precision": 0.9207,
+      "recall": 0.8601,
+      "f1-score": 0.8894,
+      "support": 9841.0
+    },
+    "CONCLUSIONS": {
+      "precision": 0.7402,
+      "recall": 0.8245,
+      "f1-score": 0.7801,
+      "support": 4582.0
+    }
+  }
+}

@@ -1,0 +1,7 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+joblib
+torch   # only needed for 03_neural_model.py and the --model cnn/bilstm demo option

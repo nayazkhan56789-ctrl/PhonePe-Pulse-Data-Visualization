@@ -1,0 +1,38 @@
+device=cpu  vocab=40,002  train sentences=180,040
+/home/claude/ml-healthcare-projects/project1_pubmed_rct/src/03_neural_model.py:102: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /home/conda/feedstock_root/build_artifacts/libtorch_1793254498799/work/torch/csrc/utils/tensor_numpy.cpp:213.)
+  ds = TensorDataset(torch.from_numpy(encode(df.text.tolist(), vocab)), torch.from_numpy(df.label_id.values))
+epoch 1/5  loss=0.8461  dev macro-F1=0.7394  (236s)
+epoch 2/5  loss=0.6594  dev macro-F1=0.7472  (230s)
+epoch 3/5  loss=0.5760  dev macro-F1=0.7636  (213s)
+epoch 4/5  loss=0.5078  dev macro-F1=0.7620  (249s)
+epoch 5/5  loss=0.4462  dev macro-F1=0.7568  (235s)
+
+=== neural_cnn_DEV (TEST) ===
+accuracy=0.8213  macro-F1=0.7636  weighted-F1=0.8223
+              precision    recall  f1-score   support
+
+  BACKGROUND     0.6254    0.6860    0.6543      3449
+   OBJECTIVE     0.6854    0.5812    0.6290      2376
+     METHODS     0.9029    0.9027    0.9028      9964
+     RESULTS     0.9064    0.8521    0.8784      9841
+ CONCLUSIONS     0.7085    0.8040    0.7532      4582
+
+    accuracy                         0.8213     30212
+   macro avg     0.7657    0.7652    0.7636     30212
+weighted avg     0.8258    0.8213    0.8223     30212
+
+
+=== neural_cnn (TEST) ===
+accuracy=0.8148  macro-F1=0.7589  weighted-F1=0.8158
+              precision    recall  f1-score   support
+
+  BACKGROUND     0.6303    0.6838    0.6560      3621
+   OBJECTIVE     0.6636    0.5799    0.6189      2333
+     METHODS     0.8933    0.8990    0.8961      9897
+     RESULTS     0.9047    0.8385    0.8703      9713
+ CONCLUSIONS     0.7075    0.8057    0.7534      4571
+
+    accuracy                         0.8148     30135
+   macro avg     0.7599    0.7614    0.7589     30135
+weighted avg     0.8194    0.8148    0.8158     30135
+
